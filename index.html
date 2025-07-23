@@ -8,7 +8,6 @@
     <!-- defer stylesheet? -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="/js/code-validation.js" defer></script>
     <script src="/js/theme-toggle.js" defer></script>
     <script type="module" src="/js/experience-card.js" defer></script>
     <script type="module" src="/js/project-card.js" defer></script>
@@ -30,27 +29,6 @@
             <i class="fa-solid fa-moon" id="moon-icon" style="display: none;"></i>
         </button>
 
-        <!-- <button id="theme-expand">Customize Theme</button>
-        <section id="theme-picker">
-            <h2>Customize Your Theme</h2>
-            <label for="text-color">Text Color: </label>
-            <input type="color" id="text-color" name="text-color" value="#000000"><br>
-
-            <label for="background-color">Background Color: </label>
-            <input type="color" id="background-color" name="background-color" value="#ffffff"><br>
-
-            <label for="font-selector">Select Font: </label>
-            <select id="font-selector">
-                <option value="Arial">Arial</option>
-                <option value="Courier New">Courier New</option>
-            </select><br>
-
-            <label for="theme-name">Theme Name: </label>
-            <input type="text" id="theme-name" placeholder="Enter theme name"><br>
-
-            <button id="save-theme">Save Theme</button>
-            <div id="saved-themes"></div>
-        </section> -->
     </header>
 
     <main>
@@ -70,10 +48,6 @@
 
         <section class="experiences">
             <h2>Previous Work Experience</h2>
-            <section class="experience-buttons">
-                <button id="load-local">Load Local</button>
-                <button id="load-remote">Load Remote</button>
-            </section>
             <section class="experience-items"> </section>
         </section>
 
@@ -120,10 +94,6 @@
 
         <section class="projects">
             <h2>Featured Projects</h2>
-            <!-- <section class="project-buttons">
-                <button id="load-local-projects">Load Local</button>
-                <button id="load-remote-projects">Load Remote</button>
-            </section> -->
             <section class="project-items"> </section>
         </section>
         
@@ -187,29 +157,6 @@
                 <dt>Libraries</dt>
                 <dd>pandas, NumPy, Matplotlib, Requests, BeautifulSoup4, scikit-learn</dd>
             </dl>
-        </section>
-        
-        <section class="contact-form">
-            <h2>Contact Me</h2>
-            <form action="https://httpbin.org/post" method="POST">
-                <label for="name">Name:<span class="required">*</span></label>
-                <input type="text" id="name" name="name" placeholder="e.g. Jane Doe" required>
-                
-                <label for="email">Email:<span class="required">*</span></label>
-                <input type="email" id="email" name="email" placeholder="e.g. janedoe@example.com" required>
-                
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" placeholder="e.g. I would like to chat." required></textarea>
-                <div id="charCount">500 characters remaining</div>
-                
-                <input type="hidden" name="possible_bot" value="true">
-                <input type="hidden" id="formErrors" name="form-errors">
-                
-                <button type="submit">Send</button>
-                
-                <output id="error-message" class="error-message"></output>
-                <output id="info-message" class="info-message"></output>
-            </form>
         </section>
         
         
